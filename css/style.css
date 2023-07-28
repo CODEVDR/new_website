@@ -57,10 +57,10 @@ body {
   margin: 5px 40px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
 }
-#respNavbar{
+#respNavbar {
   display: none;
 }
-.respLogo{
+.respLogo {
   display: none;
 }
 /* Mid */
@@ -573,6 +573,9 @@ footer .socialMedia a:hover {
     margin: 5px 10px;
   }
   /* home section */
+  #home {
+    height: 70vh;
+  }
   #home::before {
     background: transparent;
   }
@@ -709,14 +712,14 @@ footer .socialMedia a:hover {
   }
   .container .card {
     padding: 10px;
-    width: 220px;
+    width: 350px;
     margin: auto;
   }
   #services .container {
     /* margin: auto; */
     align-items: center;
     justify-content: center;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   }
   .card p {
     font-size: 8px;
@@ -734,22 +737,36 @@ footer .socialMedia a:hover {
     flex-direction: column;
   }
 }
+@media screen and (max-width: 570) {
+  .container .card {
+    padding: 10px;
+    width: 220px;
+    margin: auto;
+  }
+  #services .container {
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 0.3rem;
+  }
+}
 @media screen and (max-width: 520px) {
-  body{
+  body {
     display: grid;
     grid-template-areas:
-        "respNavbar respNavbar respNavbar respNavbar"
-        "home home home home"
-        "section section section section"
-        "about about about about"
-        "services services services services"
-        "contact contact contact contact"
-        "copy copy copy copy";
+      "respNavbar respNavbar respNavbar respNavbar"
+      "home home home home"
+      "section section section section"
+      "about about about about"
+      "services services services services"
+      "contact contact contact contact"
+      "copy copy copy copy";
   }
   /* Configuring navbar */
-  #navbar{
+  #navbar {
     display: none;
-  }.resp-modeSwitch {
+  }
+  .resp-modeSwitch {
     filter: invert(100%);
     width: 30px;
     height: 30px;
@@ -760,7 +777,7 @@ footer .socialMedia a:hover {
     background: transparent;
     border: transparent;
   }
-  #respNavbar{
+  #respNavbar {
     display: flex;
     grid-area: respNavbar;
     flex-direction: column;
@@ -772,17 +789,17 @@ footer .socialMedia a:hover {
     height: auto;
     width: 100%;
   }
-  #respNavbar section div{
+  #respNavbar section div {
     display: flex;
     justify-content: space-between;
   }
-  #links{
+  #links {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 100%;
   }
-  #links li{
+  #links li {
     display: flex;
     list-style: none;
     justify-content: center;
@@ -790,24 +807,25 @@ footer .socialMedia a:hover {
     font-family: var(--nav-font);
     margin: 3px 3px;
   }
-  #links li a{
+  #links li a {
     text-decoration: none;
     color: inherit;
   }
-  .respLogo{
+  .respLogo {
     display: block;
     width: 110px;
     margin: 10px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
   }
-  .right{
+  .right {
     margin: 10px 20px;
     transition: all 1s;
+    font-size: 30px;
   }
   /* Ends */
   #home {
     padding: 0px 5px;
-    height: 50vh;
+    height: 60vh;
   }
   #home div h1 {
     font-size: 25px;
@@ -828,8 +846,8 @@ footer .socialMedia a:hover {
   }
   .container .card {
     padding: 10px;
-    width: 320px;
-    margin: auto;
+    width: 350px;
+    margin: 10px auto;
   }
   .card img {
     height: 200px;
@@ -845,8 +863,22 @@ footer .socialMedia a:hover {
   .form-group input[type="submit"] {
     width: 30%;
   }
+  .form-group label{
+    font-size: 15px;
+  }
   .form-group input,
   .form-group select {
     width: 90%;
+    font-size: 15px;
+  }
+}
+@media screen and (max-width:410px) {
+  #services .container {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  .container .card {
+    padding: 10px;
+    width: 300px !important;
+    margin: 10px auto !important;
   }
 }
