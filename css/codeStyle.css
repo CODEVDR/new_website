@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Code+Pro&display=swap');
+
+:root {
+    --head-font: 'Bebas Neue', sans-serif !important;
+    --code-font: 'Source Code Pro', monospace !important;
+
+}
+
+body {
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.container-code {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+
+}
+
+.container-code h3 {
+    font-family: var(--head-font);
+    font-size: 30px;
+    margin: 15px 0px;
+}
+
+.container-code a {
+    font-family: var(--code-font);
+    font-size: 20px;
+    text-decoration: none;
+    color: gray;
+    margin: 15px 0px;
+}
+
+.container-code a:hover {
+    color: purple;
+    text-decoration: underline;
+}
+
+/* Custom styles for code blocks */
+pre {
+    width: 80%;
+    height: 70vh;
+    /* border: 2px solid purple; */
+    box-shadow: 0 0 10px black;
+    border: 2px solid purple;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    border-radius: 10px;
+}
+
+/* For Hiding Scrollbar */
+pre::-webkit-scrollbar {
+    display: none;
+}
+
+pre {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+    background: white !important;
+}
+
+/* For Removing Cursord Background Color */
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+    background-color: transparent;
+}
+
+/* For Background Color Of Code Block */
+code[class*="language-"],
+pre[class*="language-"] {
+    background: #1e293b !important;
+    font-family: var(--code-font);
+}
+
+/* For Selection Of Code */
+pre[class*="language-"]::selection,
+pre[class*="language-"] ::selection,
+code[class*="language-"]::selection,
+code[class*="language-"] ::selection {
+    text-shadow: none;
+    color: black;
+    background: violet;
+}
+
+/* For Background */
+:not(pre)>code[class*="language-"],
+pre[class*="language-"] {
+    background: inherit;
+}
+
+code[class*="language-"],
+pre[class*="language-"] {
+    text-shadow: none;
+
+}
+
+pre[class*="language-"] {
+    padding: 5px 5px;
+    margin: 20px 20px;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+
+pre code {
+    color: white !important;
+    padding: 10px;
+    /* Add padding to the code block if needed */
+}
+
+/* Making Responsive */
+@media screen and (max-width:1000px) {
+    .container-code {
+        width: 95%;
+    }
+
+    pre {
+        width: 90%;
+    }
+
+    pre code {
+        padding: 0px;
+    }
+
+    code[class*="language-"],
+    pre[class*="language-"] {
+        text-shadow: none;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    code[class*="language-"],
+    pre[class*="language-"] {
+        text-shadow: none;
+        font-size: 12px;
+    }
+    .container-code a {
+        font-size: 15px;
+    }
+}

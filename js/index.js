@@ -1,8 +1,12 @@
 // For Redirecting To mail
-let btn_1 = document.getElementsByClassName("btn-1")[0];
-btn_1.onclick = () => {
-  window.location.href = "mailto:code.durgesh86@gmail.com";
-};
+try {
+  let btn_1 = document.getElementsByClassName("btn-1")[0];
+  btn_1.onclick = () => {
+    window.location.href = "mailto:code.durgesh86@gmail.com";
+  };
+} catch (error) {
+
+}
 
 // For Hamburger
 let i = 0;
@@ -11,12 +15,10 @@ const nav = () => {
     document.getElementById("links").style.display = "none";
     document.getElementById("hamburger").classList.add("fa-bars");
     document.getElementById("hamburger").classList.remove("fa-close");
-    console.log(true, i);
   } else {
     document.getElementById("links").style.display = "flex";
     document.getElementById("hamburger").classList.add("fa-close");
     document.getElementById("hamburger").classList.remove("fa-bars");
-    console.log(false, i);
   }
 
   i++;
