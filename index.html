@@ -11,508 +11,183 @@
 </head>
 
 <body>
-    <header>
-        <nav id="navbar">
+    <nav id="navbar">
+        <div>
+            <img class="logo" src="https://codevdr.github.io/v/img/LOGO.jpg" alt="logo">
+        </div>
+        <ul>
+            <li title="Switch Mode"><button id="mode"><img class="modeSwitch" src="img/contrast.png"
+                        alt="mode"></button></li>
+            <li><a href="#" onclick="document.title='Home | CodeWithVdr'">HOME</a></li>
+            <li><a href="about.html" onclick="document.title='About | CodeWithVdr'">ABOUT</a></li>
+            <li><a href="services.html" onclick="document.title='Services | CodeWithVdr'">SERVICES</a></li>
+            <li><a href="contact.html" onclick="document.title='Contact | CodeWithVdr'">CONTACT ME</a></li>
+        </ul>
+        <div>
+            <form id="searchBar">
+                <input type="search" placeholder="Search...">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <!-- responsive Navbar -->
+    <nav id="respNavbar">
+        <section>
             <div>
-                <img class="logo" src="https://codevdr.github.io/v/img/LOGO.jpg" alt="logo">
+                <div class="left">
+                    <img class="respLogo" src="https://codevdr.github.io/v/img/CODE.jpg" alt="">
+                </div>
+                <div class="right">
+                    <i class="fa" onclick="nav()" id="hamburger"></i>
+                </div>
             </div>
-            <ul>
-                <li title="Switch Mode"><button id="mode"><img class="modeSwitch" src="img/contrast.png"
-                            alt="mode"></button></li>
-                <li><a href="#" onclick="document.title='Home | CodeWithVdr'">HOME</a></li>
-                <li><a href="#about" onclick="document.title='About | CodeWithVdr'">ABOUT</a></li>
-                <li><a href="services.html" onclick="document.title='Services | CodeWithVdr'">SERVICES</a></li>
-                <li><a href="#contact" onclick="document.title='Contact | CodeWithVdr'">CONTACT ME</a></li>
-            </ul>
-            <div>
+        </section>
+        <!-- responsive navbar ends -->
+        <ul id="links">
+            <li title="Switch Mode"><button id="resp-mode"><img class="resp-modeSwitch" src="img/contrast.png"
+                        alt="mode"></button></li>
+            <li><a href="#" onclick="document.title='Home | CodeWithVdr'">HOME</a></li>
+            <li><a href="about.html" onclick="document.title='About | CodeWithVdr'">ABOUT</a></li>
+            <li><a href="services.html" onclick="document.title='Services | CodeWithVdr'">SERVICES</a></li>
+            <li><a href="contact.html" onclick="document.title='Contact | CodeWithVdr'">CONTACT ME</a></li>
+            <li>
                 <form id="searchBar">
                     <input type="search" placeholder="Search...">
                     <button type="submit">Search</button>
                 </form>
-            </div>
-        </nav>
-        <!-- responsive Navbar -->
-        <nav id="respNavbar">
-            <section>
-                <div>
-                    <div class="left">
-                        <img class="respLogo" src="https://codevdr.github.io/v/img/CODE.jpg" alt="">
-                    </div>
-                    <div class="right">
-                        <i class="fa" onclick="nav()" id="hamburger"></i>
-                    </div>
-                </div>
-            </section>
-            <!-- responsive navbar ends -->
-            <ul id="links">
-                <li title="Switch Mode"><button id="resp-mode"><img class="resp-modeSwitch" src="img/contrast.png"
-                            alt="mode"></button></li>
-                <li><a href="#" onclick="document.title='Home | CodeWithVdr'">HOME</a></li>
-                <li><a href="#about" onclick="document.title='About | CodeWithVdr'">ABOUT</a></li>
-                <li><a href="services.html" onclick="document.title='Services | CodeWithVdr'">SERVICES</a></li>
-                <li><a href="#contact" onclick="document.title='Contact | CodeWithVdr'">CONTACT ME</a></li>
-                <li>
-                    <form id="searchBar">
-                        <input type="search" placeholder="Search...">
-                        <button type="submit">Search</button>
-                    </form>
-                </li>
-            </ul>
+            </li>
+        </ul>
 
-        </nav>
-        <!-- Home Section -->
-        <section id="home">
-            <div class="Logo">
-                <img src="https://codevdr.github.io/v/img/LOGO.jpg" alt="logo">
+    </nav>
+    <!-- Home Section -->
+    <section id="home">
+        <div class="Logo">
+            <img src="https://codevdr.github.io/v/img/LOGO.jpg" alt="logo">
+        </div>
+        <div class="para">
+            <h1>Welcome To <span id="heading">CodeWithVdr</span> </h1>
+            <h3>Know Skills - <span id="skills"></span></h3>
+            <p>
+                Welcome to CodeWithVdr, your one-stop destination for all things technology! Whether you're a
+                beginner looking to embark on your coding journey or an experienced developer seeking to enhance
+                your skills, you've come to the right place.
+            </p>
+            <div class="buttons">
+                <button class="btn-1" onclick="alert('Redirecting To E-Mail')">Hire Me</button>
+                <button class="btn-2" onclick="location.href='pdf/resume.pdf'">Resume</button>
             </div>
-            <div class="para">
-                <h1>Welcome To <span id="heading">CodeWithVdr</span> </h1>
-                <h3>Know Skills - <span id="skills"></span></h3>
-                <p>
-                    Welcome to CodeWithVdr, your one-stop destination for all things technology! Whether you're a
-                    beginner looking to embark on your coding journey or an experienced developer seeking to enhance
-                    your skills, you've come to the right place.
-                </p>
-                <div class="buttons">
-                    <button class="btn-1" onclick="alert('Redirecting To E-Mail')">Hire Me</button>
-                    <button class="btn-2" onclick="location.href='pdf/resume.pdf'">Resume</button>
-                </div>
-            </div>
-        </section>
-        <!-- Home Section Ends -->
+        </div>
+    </section>
+    <!-- Home Section Ends -->
 
 
-        <section id="section" class="sectionBg">
-            <div class="right">
-                <div class="content">
-                    <h3>Python: Empowering Innovation and Simplicity in Programming</h3>
-                    <p class="para">
-                        Python programming language offers a plethora of benefits that have contributed to its
-                        widespread adoption and popularity. Firstly, its simplicity and clean syntax make it easy to
-                        learn, enabling faster development and reduced maintenance time. Python's extensive standard
-                        library and vast third-party modules facilitate rapid prototyping and development of complex
-                        applications. Its versatility allows Python to be utilized in various domains, including web
-                        development, data analysis, machine learning, and automation. Moreover, its cross-platform
-                        compatibility allows seamless deployment on different operating systems. With an active and
-                        supportive community, developers can access abundant resources, libraries, and tools, making
-                        Python a powerful and efficient choice for diverse projects.</p>
-                </div>
-                <img src="https://source.unsplash.com/600x600/?python-programming-language" alt="">
+    <section id="section" class="sectionBg">
+        <div class="right">
+            <div class="content">
+                <h3>Python: Empowering Innovation and Simplicity in Programming</h3>
+                <p class="para">
+                    Python programming language offers a plethora of benefits that have contributed to its
+                    widespread adoption and popularity. Firstly, its simplicity and clean syntax make it easy to
+                    learn, enabling faster development and reduced maintenance time. Python's extensive standard
+                    library and vast third-party modules facilitate rapid prototyping and development of complex
+                    applications. Its versatility allows Python to be utilized in various domains, including web
+                    development, data analysis, machine learning, and automation. Moreover, its cross-platform
+                    compatibility allows seamless deployment on different operating systems. With an active and
+                    supportive community, developers can access abundant resources, libraries, and tools, making
+                    Python a powerful and efficient choice for diverse projects.</p>
             </div>
-        </section>
-        <section id="section" class="sectionBg">
-            <div class="left">
-                <div class="content">
-                    <h3>JavaScript: Unleashing Interactivity and Versatility on the Web</h3>
-                    <p class="para">JavaScript is a highly versatile and essential programming language that offers
-                        numerous benefits to developers. As a client-side language, it enables interactive and dynamic
-                        web development by allowing manipulation of HTML and CSS, leading to engaging user experiences.
-                        Its wide adoption and compatibility with all major web browsers ensure broad reach and
-                        accessibility. With the advent of Node.js, JavaScript can also be used on the server-side,
-                        making it a full-stack language capable of creating end-to-end applications. The massive
-                        ecosystem of libraries, frameworks, and tools, such as React, Angular, and Vue.js, simplifies
-                        development and boosts productivity. JavaScript's asynchronous nature enhances performance,
-                        facilitating smooth interactions and faster loading times for web applications. Its constantly
-                        evolving nature ensures it remains at the forefront of modern development trends.</p>
-                </div>
-                <img src="https://source.unsplash.com/600x600/?javascript" alt="">
+            <img src="https://source.unsplash.com/600x600/?python-programming-language" alt="">
+        </div>
+    </section>
+    <section id="section" class="sectionBg">
+        <div class="left">
+            <div class="content">
+                <h3>JavaScript: Unleashing Interactivity and Versatility on the Web</h3>
+                <p class="para">JavaScript is a highly versatile and essential programming language that offers
+                    numerous benefits to developers. As a client-side language, it enables interactive and dynamic
+                    web development by allowing manipulation of HTML and CSS, leading to engaging user experiences.
+                    Its wide adoption and compatibility with all major web browsers ensure broad reach and
+                    accessibility. With the advent of Node.js, JavaScript can also be used on the server-side,
+                    making it a full-stack language capable of creating end-to-end applications. The massive
+                    ecosystem of libraries, frameworks, and tools, such as React, Angular, and Vue.js, simplifies
+                    development and boosts productivity. JavaScript's asynchronous nature enhances performance,
+                    facilitating smooth interactions and faster loading times for web applications. Its constantly
+                    evolving nature ensures it remains at the forefront of modern development trends.</p>
             </div>
-        </section>
+            <img src="https://source.unsplash.com/600x600/?javascript" alt="">
+        </div>
+    </section>
 
-        <section id="section" class="sectionBg">
-            <div class="right">
-                <div class="content">
-                    <h3>The Foundations of Modern Computing: C Programming Language</h3>
-                    <p class="para">C programming language offers a multitude of benefits that have solidified its
-                        status as a foundational language in the world of programming. As a low-level language, it
-                        provides direct access to memory and hardware, making it ideal for system-level programming and
-                        developing efficient applications. Its simple and elegant syntax promotes a structured approach
-                        to programming, fostering good coding practices and improving overall code readability. C's
-                        portability allows developers to write code that can be easily compiled and executed on various
-                        platforms. Additionally, the extensive standard library and community-driven libraries enable
-                        developers to build robust and high-performance software, making C an essential language for
-                        projects requiring speed, control, and resource optimization.</p>
-                </div>
-                <img src="https://source.unsplash.com/600x600/?c-programming-language" alt="">
+    <section id="section" class="sectionBg">
+        <div class="right">
+            <div class="content">
+                <h3>The Foundations of Modern Computing: C Programming Language</h3>
+                <p class="para">C programming language offers a multitude of benefits that have solidified its
+                    status as a foundational language in the world of programming. As a low-level language, it
+                    provides direct access to memory and hardware, making it ideal for system-level programming and
+                    developing efficient applications. Its simple and elegant syntax promotes a structured approach
+                    to programming, fostering good coding practices and improving overall code readability. C's
+                    portability allows developers to write code that can be easily compiled and executed on various
+                    platforms. Additionally, the extensive standard library and community-driven libraries enable
+                    developers to build robust and high-performance software, making C an essential language for
+                    projects requiring speed, control, and resource optimization.</p>
             </div>
-        </section>
-        <section id="section" class="sectionBg">
-            <div class="left">
-                <div class="content">
-                    <h3>Java: Write Once, Run Anywhere - The Versatile Language for Modern Applications</h3>
-                    <p class="para">Java programming language offers a plethora of benefits, solidifying its position as
-                        a widely-used language in various domains. One of its key strengths is its "write once, run
-                        anywhere" principle, allowing Java applications to be executed on any platform with a Java
-                        Virtual Machine (JVM). This platform independence ensures greater portability and broader reach.
-                        Java's robustness and reliability stem from its strict type-checking and automatic memory
-                        management, which prevent common programming errors and enhance security. The extensive standard
-                        library and vast ecosystem of frameworks, such as Spring and Hibernate, expedite development and
-                        scalability. Additionally, Java's object-oriented nature promotes modularity, reusability, and
-                        maintainability, making it an excellent choice for building enterprise-level applications.</p>
-                </div>
-                <img src="https://source.unsplash.com/600x600/?java-programming-language" alt="">
+            <img src="https://source.unsplash.com/600x600/?c-programming-language" alt="">
+        </div>
+    </section>
+    <section id="section" class="sectionBg">
+        <div class="left">
+            <div class="content">
+                <h3>Java: Write Once, Run Anywhere - The Versatile Language for Modern Applications</h3>
+                <p class="para">Java programming language offers a plethora of benefits, solidifying its position as
+                    a widely-used language in various domains. One of its key strengths is its "write once, run
+                    anywhere" principle, allowing Java applications to be executed on any platform with a Java
+                    Virtual Machine (JVM). This platform independence ensures greater portability and broader reach.
+                    Java's robustness and reliability stem from its strict type-checking and automatic memory
+                    management, which prevent common programming errors and enhance security. The extensive standard
+                    library and vast ecosystem of frameworks, such as Spring and Hibernate, expedite development and
+                    scalability. Additionally, Java's object-oriented nature promotes modularity, reusability, and
+                    maintainability, making it an excellent choice for building enterprise-level applications.</p>
             </div>
-        </section>
-        <section id="section" class="sectionBg">
-            <div class="right">
-                <div class="content">
-                    <h3>MySQL: Powering Dynamic and Secure Database Solutions</h3>
-                    <p class="para">MySQL is a powerful and popular relational database management system that offers
-                        numerous benefits to developers and businesses alike. Its open-source nature ensures
-                        cost-effectiveness and widespread accessibility. MySQL's scalability and performance are
-                        commendable, making it suitable for handling small to large-scale databases with ease. The
-                        robust security features, including encryption and user privilege controls, safeguard sensitive
-                        data from unauthorized access. With a straightforward and intuitive SQL interface, developers
-                        can easily interact with and manage data efficiently. MySQL's extensive support for various
-                        platforms and programming languages enables seamless integration into diverse applications.
-                        Furthermore, its active community and regular updates ensure continuous improvement and reliable
-                        technical support, making MySQL a reliable choice for data-driven projects.</p>
-                </div>
-                <img src="https://source.unsplash.com/600x600/?mysql" alt="">
+            <img src="https://source.unsplash.com/600x600/?java-programming-language" alt="">
+        </div>
+    </section>
+    <section id="section" class="sectionBg">
+        <div class="right">
+            <div class="content">
+                <h3>MySQL: Powering Dynamic and Secure Database Solutions</h3>
+                <p class="para">MySQL is a powerful and popular relational database management system that offers
+                    numerous benefits to developers and businesses alike. Its open-source nature ensures
+                    cost-effectiveness and widespread accessibility. MySQL's scalability and performance are
+                    commendable, making it suitable for handling small to large-scale databases with ease. The
+                    robust security features, including encryption and user privilege controls, safeguard sensitive
+                    data from unauthorized access. With a straightforward and intuitive SQL interface, developers
+                    can easily interact with and manage data efficiently. MySQL's extensive support for various
+                    platforms and programming languages enables seamless integration into diverse applications.
+                    Furthermore, its active community and regular updates ensure continuous improvement and reliable
+                    technical support, making MySQL a reliable choice for data-driven projects.</p>
             </div>
-        </section>
-        <!-- About Us -->
-        <section id="about">
-            <h3>About Me</h3>
-            <div class="_container">
-                <div class="left">
-                    <img src="img/me.jpg" alt="">
-                </div>
-                <div class="right">
-                    <h4>This is VDR , A Developer</h4>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet incidunt nisi est. Numquam
-                        voluptatem fugiat alias impedit! Fugiat odit facere porro quis veniam at molestias in? Corporis
-                        fugit, maxime culpa reprehenderit expedita molestiae, aspernatur est nobis quaerat eaque cumque.
-                        Quod, blanditiis voluptas. Rem modi blanditiis hic accusamus, minus labore tenetur! Explicabo
-                        vitae officia eius similique recusandae ex aperiam nulla quae architecto provident facilis illo
-                        sequi animi ipsum earum excepturi nisi, corrupti ducimus minima blanditiis nesciunt eum
-                        asperiores aliquam ut. Libero illo laborum iusto aliquid id ea, eum nobis ut omnis porro
-                        veritatis ullam commodi corporis in voluptas ipsam. Quaerat, ut?</p>
-                    <h4>Skills</h4>
-                    <div class="skill">
-                        <div class="skill-title">Python</div>
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 100%;">100%</div>
-                        </div>
-                    </div>
+            <img src="https://source.unsplash.com/600x600/?mysql" alt="">
+        </div>
+    </section>
 
-                    <div class="skill">
-                        <div class="skill-title">JavaScript</div>
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 70%;">70%</div>
-                        </div>
-                    </div>
 
-                    <div class="skill">
-                        <div class="skill-title">HTML & CSS</div>
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 80%;">80%</div>
-                        </div>
-                    </div>
 
-                    <div class="skill">
-                        <div class="skill-title">MySQL</div>
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 60%;">60%</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <footer>
+        <div class="copy">
+            <img src="https://codevdr.github.io/v/img/me.png" alt="VDR">
+            <p class="copy">copyright &copy; <span id="year"></span>codewithvdr.com</p>
+        </div>
+        <div class="socialMedia">
+            <a href="https://www.facebook.com/vdurgeshwar.hack" class="fa fa-facebook" title="fa-facebook"></a>
+            <a href="#" class="fa fa-twitter" title="fa-twitter"></a>
+            <a href="https://www.youtube.com/channel/UCZfuGvGsUVmqGbTwjvkO68g" class="fa fa-youtube"
+                title="fa-youtube"></a>
+            <a href="https://www.instagram.com/_imvdurgeshwarrao_/" class="fa fa-instagram" title="fa-instagram"></a>
+            <a href="https://github.com/CODEVDR" class="fa fa-github" title="fa-github"></a>
+        </div>
+    </footer>
 
-        <!-- CONTACT ME -->
-        <section id="contact">
-            <h3 class="head">CONTACT ME</h3>
-            <div class="contact-box">
-                <form id="google-sheet">
-                    <div class="form-group">
-                        <label for="Name">Name : </label>
-                        <input type="text" name="Name" id="Name" placeholder="Enter Your Name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="PhoneNo">Phone : </label>
-                        <input type="phone" name="PhoneNo" id="phone" placeholder="Enter Your Phone" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="E-Mail">Email : </label>
-                        <input type="email" name="E-Mail" id="email" placeholder="Enter Your Email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="Suggeation">Suggeation : </label>
-                        <input type="text" name="suggeation" id="suggeation" placeholder="Enter Your Suggeation"
-                            required>
-                    </div>
-                    <div class="form-group">
-                        <label for="country">Country</label>
-                        <select id="country" title="Select Your Country" id="country" name="Country" required>
-                            <option value="India">India</option>
-                            <option value="Afganistan">Afghanistan</option>
-                            <option value="Albania">Albania</option>
-                            <option value="Algeria">Algeria</option>
-                            <option value="American Samoa">American Samoa</option>
-                            <option value="Andorra">Andorra</option>
-                            <option value="Angola">Angola</option>
-                            <option value="Anguilla">Anguilla</option>
-                            <option value="Antigua & Barbuda">Antigua & Barbuda</option>
-                            <option value="Argentina">Argentina</option>
-                            <option value="Armenia">Armenia</option>
-                            <option value="Aruba">Aruba</option>
-                            <option value="Australia">Australia</option>
-                            <option value="Austria">Austria</option>
-                            <option value="Azerbaijan">Azerbaijan</option>
-                            <option value="Bahamas">Bahamas</option>
-                            <option value="Bahrain">Bahrain</option>
-                            <option value="Bangladesh">Bangladesh</option>
-                            <option value="Barbados">Barbados</option>
-                            <option value="Belarus">Belarus</option>
-                            <option value="Belgium">Belgium</option>
-                            <option value="Belize">Belize</option>
-                            <option value="Benin">Benin</option>
-                            <option value="Bermuda">Bermuda</option>
-                            <option value="Bhutan">Bhutan</option>
-                            <option value="Bolivia">Bolivia</option>
-                            <option value="Bonaire">Bonaire</option>
-                            <option value="Bosnia & Herzegovina">Bosnia & Herzegovina</option>
-                            <option value="Botswana">Botswana</option>
-                            <option value="Brazil">Brazil</option>
-                            <option value="British Indian Ocean Ter">British Indian Ocean Ter</option>
-                            <option value="Brunei">Brunei</option>
-                            <option value="Bulgaria">Bulgaria</option>
-                            <option value="Burkina Faso">Burkina Faso</option>
-                            <option value="Burundi">Burundi</option>
-                            <option value="Cambodia">Cambodia</option>
-                            <option value="Cameroon">Cameroon</option>
-                            <option value="Canada">Canada</option>
-                            <option value="Canary Islands">Canary Islands</option>
-                            <option value="Cape Verde">Cape Verde</option>
-                            <option value="Cayman Islands">Cayman Islands</option>
-                            <option value="Central African Republic">Central African Republic</option>
-                            <option value="Chad">Chad</option>
-                            <option value="Channel Islands">Channel Islands</option>
-                            <option value="Chile">Chile</option>
-                            <option value="China">China</option>
-                            <option value="Christmas Island">Christmas Island</option>
-                            <option value="Cocos Island">Cocos Island</option>
-                            <option value="Colombia">Colombia</option>
-                            <option value="Comoros">Comoros</option>
-                            <option value="Congo">Congo</option>
-                            <option value="Cook Islands">Cook Islands</option>
-                            <option value="Costa Rica">Costa Rica</option>
-                            <option value="Cote DIvoire">Cote DIvoire</option>
-                            <option value="Croatia">Croatia</option>
-                            <option value="Cuba">Cuba</option>
-                            <option value="Curaco">Curacao</option>
-                            <option value="Cyprus">Cyprus</option>
-                            <option value="Czech Republic">Czech Republic</option>
-                            <option value="Denmark">Denmark</option>
-                            <option value="Djibouti">Djibouti</option>
-                            <option value="Dominica">Dominica</option>
-                            <option value="Dominican Republic">Dominican Republic</option>
-                            <option value="East Timor">East Timor</option>
-                            <option value="Ecuador">Ecuador</option>
-                            <option value="Egypt">Egypt</option>
-                            <option value="El Salvador">El Salvador</option>
-                            <option value="Equatorial Guinea">Equatorial Guinea</option>
-                            <option value="Eritrea">Eritrea</option>
-                            <option value="Estonia">Estonia</option>
-                            <option value="Ethiopia">Ethiopia</option>
-                            <option value="Falkland Islands">Falkland Islands</option>
-                            <option value="Faroe Islands">Faroe Islands</option>
-                            <option value="Fiji">Fiji</option>
-                            <option value="Finland">Finland</option>
-                            <option value="France">France</option>
-                            <option value="French Guiana">French Guiana</option>
-                            <option value="French Polynesia">French Polynesia</option>
-                            <option value="French Southern Ter">French Southern Ter</option>
-                            <option value="Gabon">Gabon</option>
-                            <option value="Gambia">Gambia</option>
-                            <option value="Georgia">Georgia</option>
-                            <option value="Germany">Germany</option>
-                            <option value="Ghana">Ghana</option>
-                            <option value="Gibraltar">Gibraltar</option>
-                            <option value="Great Britain">Great Britain</option>
-                            <option value="Greece">Greece</option>
-                            <option value="Greenland">Greenland</option>
-                            <option value="Grenada">Grenada</option>
-                            <option value="Guadeloupe">Guadeloupe</option>
-                            <option value="Guam">Guam</option>
-                            <option value="Guatemala">Guatemala</option>
-                            <option value="Guinea">Guinea</option>
-                            <option value="Guyana">Guyana</option>
-                            <option value="Haiti">Haiti</option>
-                            <option value="Hawaii">Hawaii</option>
-                            <option value="Honduras">Honduras</option>
-                            <option value="Hong Kong">Hong Kong</option>
-                            <option value="Hungary">Hungary</option>
-                            <option value="Iceland">Iceland</option>
-                            <option value="Indonesia">Indonesia</option>
-                            <option value="Iran">Iran</option>
-                            <option value="Iraq">Iraq</option>
-                            <option value="Ireland">Ireland</option>
-                            <option value="Isle of Man">Isle of Man</option>
-                            <option value="Israel">Israel</option>
-                            <option value="Italy">Italy</option>
-                            <option value="Jamaica">Jamaica</option>
-                            <option value="Japan">Japan</option>
-                            <option value="Jordan">Jordan</option>
-                            <option value="Kazakhstan">Kazakhstan</option>
-                            <option value="Kenya">Kenya</option>
-                            <option value="Kiribati">Kiribati</option>
-                            <option value="Korea North">Korea North</option>
-                            <option value="Korea Sout">Korea South</option>
-                            <option value="Kuwait">Kuwait</option>
-                            <option value="Kyrgyzstan">Kyrgyzstan</option>
-                            <option value="Laos">Laos</option>
-                            <option value="Latvia">Latvia</option>
-                            <option value="Lebanon">Lebanon</option>
-                            <option value="Lesotho">Lesotho</option>
-                            <option value="Liberia">Liberia</option>
-                            <option value="Libya">Libya</option>
-                            <option value="Liechtenstein">Liechtenstein</option>
-                            <option value="Lithuania">Lithuania</option>
-                            <option value="Luxembourg">Luxembourg</option>
-                            <option value="Macau">Macau</option>
-                            <option value="Macedonia">Macedonia</option>
-                            <option value="Madagascar">Madagascar</option>
-                            <option value="Malaysia">Malaysia</option>
-                            <option value="Malawi">Malawi</option>
-                            <option value="Maldives">Maldives</option>
-                            <option value="Mali">Mali</option>
-                            <option value="Malta">Malta</option>
-                            <option value="Marshall Islands">Marshall Islands</option>
-                            <option value="Martinique">Martinique</option>
-                            <option value="Mauritania">Mauritania</option>
-                            <option value="Mauritius">Mauritius</option>
-                            <option value="Mayotte">Mayotte</option>
-                            <option value="Mexico">Mexico</option>
-                            <option value="Midway Islands">Midway Islands</option>
-                            <option value="Moldova">Moldova</option>
-                            <option value="Monaco">Monaco</option>
-                            <option value="Mongolia">Mongolia</option>
-                            <option value="Montserrat">Montserrat</option>
-                            <option value="Morocco">Morocco</option>
-                            <option value="Mozambique">Mozambique</option>
-                            <option value="Myanmar">Myanmar</option>
-                            <option value="Nambia">Nambia</option>
-                            <option value="Nauru">Nauru</option>
-                            <option value="Nepal">Nepal</option>
-                            <option value="Netherland Antilles">Netherland Antilles</option>
-                            <option value="Netherlands">Netherlands (Holland, Europe)</option>
-                            <option value="Nevis">Nevis</option>
-                            <option value="New Caledonia">New Caledonia</option>
-                            <option value="New Zealand">New Zealand</option>
-                            <option value="Nicaragua">Nicaragua</option>
-                            <option value="Niger">Niger</option>
-                            <option value="Nigeria">Nigeria</option>
-                            <option value="Niue">Niue</option>
-                            <option value="Norfolk Island">Norfolk Island</option>
-                            <option value="Norway">Norway</option>
-                            <option value="Oman">Oman</option>
-                            <option value="Pakistan">Pakistan</option>
-                            <option value="Palau Island">Palau Island</option>
-                            <option value="Palestine">Palestine</option>
-                            <option value="Panama">Panama</option>
-                            <option value="Papua New Guinea">Papua New Guinea</option>
-                            <option value="Paraguay">Paraguay</option>
-                            <option value="Peru">Peru</option>
-                            <option value="Phillipines">Philippines</option>
-                            <option value="Pitcairn Island">Pitcairn Island</option>
-                            <option value="Poland">Poland</option>
-                            <option value="Portugal">Portugal</option>
-                            <option value="Puerto Rico">Puerto Rico</option>
-                            <option value="Qatar">Qatar</option>
-                            <option value="Republic of Montenegro">Republic of Montenegro</option>
-                            <option value="Republic of Serbia">Republic of Serbia</option>
-                            <option value="Reunion">Reunion</option>
-                            <option value="Romania">Romania</option>
-                            <option value="Russia">Russia</option>
-                            <option value="Rwanda">Rwanda</option>
-                            <option value="St Barthelemy">St Barthelemy</option>
-                            <option value="St Eustatius">St Eustatius</option>
-                            <option value="St Helena">St Helena</option>
-                            <option value="St Kitts-Nevis">St Kitts-Nevis</option>
-                            <option value="St Lucia">St Lucia</option>
-                            <option value="St Maarten">St Maarten</option>
-                            <option value="St Pierre & Miquelon">St Pierre & Miquelon</option>
-                            <option value="St Vincent & Grenadines">St Vincent & Grenadines</option>
-                            <option value="Saipan">Saipan</option>
-                            <option value="Samoa">Samoa</option>
-                            <option value="Samoa American">Samoa American</option>
-                            <option value="San Marino">San Marino</option>
-                            <option value="Sao Tome & Principe">Sao Tome & Principe</option>
-                            <option value="Saudi Arabia">Saudi Arabia</option>
-                            <option value="Senegal">Senegal</option>
-                            <option value="Seychelles">Seychelles</option>
-                            <option value="Sierra Leone">Sierra Leone</option>
-                            <option value="Singapore">Singapore</option>
-                            <option value="Slovakia">Slovakia</option>
-                            <option value="Slovenia">Slovenia</option>
-                            <option value="Solomon Islands">Solomon Islands</option>
-                            <option value="Somalia">Somalia</option>
-                            <option value="South Africa">South Africa</option>
-                            <option value="Spain">Spain</option>
-                            <option value="Sri Lanka">Sri Lanka</option>
-                            <option value="Sudan">Sudan</option>
-                            <option value="Suriname">Suriname</option>
-                            <option value="Swaziland">Swaziland</option>
-                            <option value="Sweden">Sweden</option>
-                            <option value="Switzerland">Switzerland</option>
-                            <option value="Syria">Syria</option>
-                            <option value="Tahiti">Tahiti</option>
-                            <option value="Taiwan">Taiwan</option>
-                            <option value="Tajikistan">Tajikistan</option>
-                            <option value="Tanzania">Tanzania</option>
-                            <option value="Thailand">Thailand</option>
-                            <option value="Togo">Togo</option>
-                            <option value="Tokelau">Tokelau</option>
-                            <option value="Tonga">Tonga</option>
-                            <option value="Trinidad & Tobago">Trinidad & Tobago</option>
-                            <option value="Tunisia">Tunisia</option>
-                            <option value="Turkey">Turkey</option>
-                            <option value="Turkmenistan">Turkmenistan</option>
-                            <option value="Turks & Caicos Is">Turks & Caicos Is</option>
-                            <option value="Tuvalu">Tuvalu</option>
-                            <option value="Uganda">Uganda</option>
-                            <option value="United Kingdom">United Kingdom</option>
-                            <option value="Ukraine">Ukraine</option>
-                            <option value="United Arab Erimates">United Arab Emirates</option>
-                            <option value="United States of America">United States of America</option>
-                            <option value="Uraguay">Uruguay</option>
-                            <option value="Uzbekistan">Uzbekistan</option>
-                            <option value="Vanuatu">Vanuatu</option>
-                            <option value="Vatican City State">Vatican City State</option>
-                            <option value="Venezuela">Venezuela</option>
-                            <option value="Vietnam">Vietnam</option>
-                            <option value="Virgin Islands (Brit)">Virgin Islands (Brit)</option>
-                            <option value="Virgin Islands (USA)">Virgin Islands (USA)</option>
-                            <option value="Wake Island">Wake Island</option>
-                            <option value="Wallis & Futana Is">Wallis & Futana Is</option>
-                            <option value="Yemen">Yemen</option>
-                            <option value="Zaire">Zaire</option>
-                            <option value="Zambia">Zambia</option>
-                            <option value="Zimbabwe">Zimbabwe</option>
-                        </select>
-                        <input type="submit" value="submit">
-                    </div>
-                </form>
-            </div>
-        </section>
-        <footer>
-            <div class="copy">
-                <img src="https://codevdr.github.io/v/img/me.png" alt="VDR">
-                <p class="copy">copyright &copy; <span id="year"></span>codewithvdr.com</p>
-            </div>
-            <div class="socialMedia">
-                <a href="https://www.facebook.com/vdurgeshwar.hack" class="fa fa-facebook" title="fa-facebook"></a>
-                <a href="#" class="fa fa-twitter" title="fa-twitter"></a>
-                <a href="https://www.youtube.com/channel/UCZfuGvGsUVmqGbTwjvkO68g" class="fa fa-youtube"
-                    title="fa-youtube"></a>
-                <a href="https://www.instagram.com/_imvdurgeshwarrao_/" class="fa fa-instagram"
-                    title="fa-instagram"></a>
-                <a href="https://github.com/CODEVDR" class="fa fa-github" title="fa-github"></a>
-            </div>
-        </footer>
-    </header>
 </body>
 <script src="js/index.js"></script>
 <script src="js/modeSwitch.js"></script>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="https://codevdr.github.io/v/img/LOGO.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <title>About | CodeWithVdr</title>
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <div>
+                <img class="logo" src="https://codevdr.github.io/v/img/LOGO.jpg" alt="logo">
+            </div>
+            <ul>
+                <li title="Switch Mode"><button id="mode"><img class="modeSwitch" src="img/contrast.png"
+                            alt="mode"></button></li>
+                <li><a href="index.html" onclick="document.title='Home | CodeWithVdr'">HOME</a></li>
+                <li><a href="#" onclick="document.title='About | CodeWithVdr'">ABOUT</a></li>
+                <li><a href="services.html" onclick="document.title='Services | CodeWithVdr'">SERVICES</a></li>
+                <li><a href="contact.html" onclick="document.title='Contact | CodeWithVdr'">CONTACT ME</a></li>
+            </ul>
+            <div>
+                <form id="searchBar">
+                    <input type="search" placeholder="Search...">
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+        <!-- responsive Navbar -->
+        <nav id="respNavbar">
+            <section>
+                <div>
+                    <div class="left">
+                        <img class="respLogo" src="https://codevdr.github.io/v/img/CODE.jpg" alt="">
+                    </div>
+                    <div class="right">
+                        <i class="fa" onclick="nav()" id="hamburger"></i>
+                    </div>
+                </div>
+            </section>
+            <!-- responsive navbar ends -->
+            <ul id="links">
+                <li title="Switch Mode"><button id="resp-mode"><img class="resp-modeSwitch" src="img/contrast.png"
+                            alt="mode"></button></li>
+                <li><a href="index.html" onclick="document.title='Home | CodeWithVdr'">HOME</a></li>
+                <li><a href="#" onclick="document.title='About | CodeWithVdr'">ABOUT</a></li>
+                <li><a href="services.html" onclick="document.title='Services | CodeWithVdr'">SERVICES</a></li>
+                <li><a href="contact.html" onclick="document.title='Contact | CodeWithVdr'">CONTACT ME</a></li>
+                <li>
+                    <form id="searchBar">
+                        <input type="search" placeholder="Search...">
+                        <button type="submit">Search</button>
+                    </form>
+                </li>
+            </ul>
+
+        </nav>
+
+        <!-- About Section -->
+        <section id="about">
+            <h3>About Me</h3>
+            <div class="_container">
+                <div class="left">
+                    <img src="img/me.jpg" alt="">
+                </div>
+                <div class="right">
+                    <h4>This is VDR , A Developer</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet incidunt nisi est. Numquam
+                        voluptatem fugiat alias impedit! Fugiat odit facere porro quis veniam at molestias in? Corporis
+                        fugit, maxime culpa reprehenderit expedita molestiae, aspernatur est nobis quaerat eaque cumque.
+                        Quod, blanditiis voluptas. Rem modi blanditiis hic accusamus, minus labore tenetur! Explicabo
+                        vitae officia eius similique recusandae ex aperiam nulla quae architecto provident facilis illo
+                        sequi animi ipsum earum excepturi nisi, corrupti ducimus minima blanditiis nesciunt eum
+                        asperiores aliquam ut. Libero illo laborum iusto aliquid id ea, eum nobis ut omnis porro
+                        veritatis ullam commodi corporis in voluptas ipsam. Quaerat, ut?</p>
+                    <h4>Skills</h4>
+                    <div class="skill">
+                        <div class="skill-title">Python</div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 100%;">100%</div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill-title">JavaScript</div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 70%;">70%</div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill-title">HTML & CSS</div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 80%;">80%</div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill-title">MySQL</div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 60%;">60%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section Ends -->
+
+        <footer>
+            <div class="copy">
+                <img src="https://codevdr.github.io/v/img/me.png" alt="VDR">
+                <p class="copy">copyright &copy; <span id="year"></span>codewithvdr.com</p>
+            </div>
+            <div class="socialMedia">
+                <a href="https://www.facebook.com/vdurgeshwar.hack" class="fa fa-facebook" title="fa-facebook"></a>
+                <a href="#" class="fa fa-twitter" title="fa-twitter"></a>
+                <a href="https://www.youtube.com/channel/UCZfuGvGsUVmqGbTwjvkO68g" class="fa fa-youtube"
+                    title="fa-youtube"></a>
+                <a href="https://www.instagram.com/_imvdurgeshwarrao_/" class="fa fa-instagram"
+                    title="fa-instagram"></a>
+                <a href="https://github.com/CODEVDR" class="fa fa-github" title="fa-github"></a>
+            </div>
+        </footer>
+    </header>
+</body>
+<script src="js/index.js"></script>
+<script src="js/modeSwitch.js"></script>
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+<script src="js/type.js"></script>
+
+</html>
