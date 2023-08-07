@@ -20,18 +20,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  /* background-color: gray; */
-  display: grid;
-  grid-template-areas:
-    "navbar navbar navbar navbar"
-    "home home home home"
-    "section section section section"
-    "about about about about"
-    "services services services services"
-    "contact contact contact contact"
-    "copy copy copy copy";
   box-sizing: border-box;
-  transition: background-color 0.5s;
 }
 .dark {
   color: white;
@@ -43,7 +32,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: sticky;
+  position: sticky !important;
   top: 0;
   left: 0;
   grid-area: navbar;
@@ -372,7 +361,18 @@ body {
   padding: 5px 0px;
   font-family: var(--head-font);
   font-size: 30px;
+  width: 60% !important;
+  margin: 20px auto;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
 }
+/* Making Responsive */
+@media screen and (max-width:735px) {
+  #services h3{
+      width: 85% !important;
+  }
+}
+/* ------------------- */
 #services hr {
   margin: 15px 0px;
 }
@@ -388,7 +388,7 @@ body {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
   width: 350px;
   padding: 20px;
-  margin: 5px;
+  margin: 5px auto;
   align-items: center;
   justify-content: center;
   font-family: var(--content-font);
@@ -751,7 +751,7 @@ footer .socialMedia a:hover {
   }
 }
 @media screen and (max-width: 520px) {
-  body {
+  /* body {
     display: grid;
     grid-template-areas:
       "respNavbar respNavbar respNavbar respNavbar"
@@ -761,7 +761,7 @@ footer .socialMedia a:hover {
       "services services services services"
       "contact contact contact contact"
       "copy copy copy copy";
-  }
+  } */
   /* Configuring navbar */
   #navbar {
     display: none;

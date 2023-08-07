@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="https://codevdr.github.io/v/img/LOGO.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="css/servicesStyle.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Services | CodeWithVdr</title>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div>
+            <img class="logo" src="https://codevdr.github.io/v/img/LOGO.jpg" alt="logo">
+        </div>
+        <ul>
+            <li title="Switch Mode"><button id="mode"><img class="modeSwitch" src="img/contrast.png"
+                        alt="mode"></button></li>
+            <li><a href="index.html#" onclick="document.title='Home | CodeWithVdr'">HOME</a></li>
+            <li><a href="index.html#about" onclick="document.title='About | CodeWithVdr'">ABOUT</a></li>
+            <li><a href="#services" onclick="document.title='Services | CodeWithVdr'">SERVICES</a></li>
+            <li><a href="index.html#contact" onclick="document.title='Contact | CodeWithVdr'">CONTACT ME</a></li>
+        </ul>
+        <div>
+            <form id="searchBar">
+                <input type="search" placeholder="Search...">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <!-- responsive Navbar -->
+    <nav id="respNavbar">
+        <section>
+            <div>
+                <div class="left">
+                    <img class="respLogo" src="https://codevdr.github.io/v/img/CODE.jpg" alt="">
+                </div>
+                <div class="right">
+                    <i class="fa" onclick="nav()" id="hamburger"></i>
+                </div>
+            </div>
+        </section>
+        <!-- responsive navbar ends -->
+        <ul id="links">
+            <li title="Switch Mode"><button id="resp-mode"><img class="resp-modeSwitch" src="img/contrast.png"
+                        alt="mode"></button></li>
+            <li><a href="#" onclick="document.title='Home | CodeWithVdr'">HOME</a></li>
+            <li><a href="#about" onclick="document.title='About | CodeWithVdr'">ABOUT</a></li>
+            <li><a href="#services" onclick="document.title='Services | CodeWithVdr'">SERVICES</a></li>
+            <li><a href="#contact" onclick="document.title='Contact | CodeWithVdr'">CONTACT ME</a></li>
+            <li>
+                <form id="searchBar">
+                    <input type="search" placeholder="Search...">
+                    <button type="submit">Search</button>
+                </form>
+            </li>
+        </ul>
+
+    </nav>
+
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="Logo">
+            <img src="https://codevdr.github.io/v/img/LOGO.jpg" alt="logo">
+        </div>
+        <div class="para">
+            <h1>Services By <span id="heading">CodeWithVdr</span> </h1>
+            <h3>Services in - <span id="servs"></span></h3>
+            <p>
+                Welcome to CodeWithVdr, your one-stop destination for all things technology! Whether you're a
+                beginner looking to embark on your coding journey or an experienced developer seeking to enhance
+                your skills, you've come to the right place.
+            </p>
+            <div class="buttons">
+                <button class="btn-1" onclick="">Email Me</button>
+                <button class="btn-2"
+                    onclick="location.href='https://www.youtube.com/channel/UCZfuGvGsUVmqGbTwjvkO68g'">YT
+                    Channel</button>
+            </div>
+        </div>
+    </section>
+    <!-- Home Section Ends -->
+
+
+
+    <!-- Services -->
+    <section id="services">
+        <div class="head-img head">
+            <span id="title"></span>
+        </div>
+        <hr>
+
+        <!-- Python Projects -->
+
+        <h3 class="head" id="projects-python">PROJECTS-PYTHON</h3>
+        <div class="container">
+            <div class="card">
+                <h4 class="label content">Library Database Management System</h4>
+                <img src="https://codevdr.github.io/v/img/LDBMS.jpg" alt="Library_DataBase_Management_System">
+                <p>
+                    A Library Management System using Python and MySQL database is a system that helps manage
+                    library operations such as keeping track of books, their availability, and issuing and returning
+                    books. The system can be built using the MySQL Connector module to connect to the MySQL database
+                    and fetch or add data into the database. The system can also have a graphical user interface
+                    (GUI) built using Tkinter, which is Python’s standard GUI interface. This system can be very
+                    efficient and cost-effective, reducing manual work and saving time for both librarians and
+                    students. <a href="python-code.html#LDBMS">Click For Code</a>
+                </p>
+            </div>
+
+            <div class="card">
+                <h4 class="label content">Railway Database Management System</h4>
+                <img src="https://codevdr.github.io/v/img/RDBMS.jpg" alt="Library_DataBase_Management_System">
+                <p>
+                    A Railway Database Management System using Python and MySQL database is a system that helps
+                    manage railway operations such as keeping track of trains, their schedules, and ticket bookings.
+                    The system can be built using the MySQL Connector module to connect to the MySQL database and
+                    fetch or add data into the database. The system can also have a graphical user interface (GUI)
+                    built using various front-end frameworks. This system can be very efficient and cost-effective,
+                    reducing manual work and saving time for both railway staff and passengers. <a
+                        href="python-code.html#RDBMS">Click For
+                        Code</a>
+                </p>
+            </div>
+
+            <div class="card">
+                <h4 class="label content">Hospital Database Management System</h4>
+                <img src="https://codevdr.github.io/v/img/HDBMS.jpg" alt="Library_DataBase_Management_System">
+                <p>
+                    A Hospital Database Management System using Python and MySQL database is a system that helps
+                    manage hospital operations such as keeping track of patients, their medical records,
+                    appointments, and billing. The system can be built using the MySQL Connector module to connect
+                    to the MySQL database and fetch or add data into the database . The system can also have a
+                    graphical user interface (GUI) built using various front-end frameworks . This system can be
+                    very efficient and cost-effective, reducing manual work and saving time for both medical staff
+                    and patients. <a href="">Click For Code</a>
+                </p>
+            </div>
+
+            <div class="card">
+                <h4 class="label content">Medical Database Management System</h4>
+                <img src="https://codevdr.github.io/v/img/MDBMS.webp" alt="Library_DataBase_Management_System">
+                <p>
+                    A Medical Database Management System using Python and MySQL database is a system that helps
+                    manage medical operations such as keeping track of patients, their medical records,
+                    appointments, and billing. The system can be built using the MySQL Connector module to connect
+                    to the MySQL database and fetch or add data into the database . The system can also have a
+                    graphical user interface (GUI) built using Tkinter, which is Python’s standard GUI interface .
+                    This system can be very efficient and cost-effective, reducing manual work and saving time for
+                    both medical staff and patients.<a href="python-code.html#MDBMS">Click For Code</a>
+                </p>
+            </div>
+
+            <div class="card">
+                <h4 class="label content">Quiz Database Management System</h4>
+                <img src="https://codevdr.github.io/v/img/QDBMS.jpg" alt="Library_DataBase_Management_System">
+                <p>
+                    A Quiz Database Management System using Python and MySQL database is a system that helps manage
+                    quiz operations such as keeping track of questions, their answers, and user scores. The system
+                    can be built using the MySQL Connector module to connect to the MySQL database and fetch or add
+                    data into the database . The system can also have a graphical user interface (GUI) built using
+                    various front-end frameworks such as Tkinter . This system can be very efficient and
+                    cost-effective, reducing manual work and saving time for both quiz administrators and users.<a
+                        href="python-code.html#QDBMS">Click For Code</a>
+                </p>
+            </div>
+
+            <div class="card">
+                <h4 class="label content">Employee Database Management System</h4>
+                <img src="https://codevdr.github.io/v/img/EDBMS.webp" alt="Library_DataBase_Management_System">
+                <p>
+                    An Employee Database Management System using Python and MySQL database is a system that helps
+                    manage employee operations such as keeping track of employee information, their job roles, and
+                    salaries. The system can be built using the MySQL Connector module to connect to the MySQL
+                    database and fetch or add data into the database . The system can also have a graphical user
+                    interface (GUI) built using various front-end frameworks . This system can be very efficient and
+                    cost-effective, reducing manual work and saving time for both HR staff and employees. <a
+                        href="python-code.html#EDBMS">Click For Code</a>
+                </p>
+            </div>
+
+            <div class="card">
+                <h4 class="label content">Book Store Database Management System</h4>
+                <img src="https://codevdr.github.io/v/img/BKDBMS.jpg" alt="Library_DataBase_Management_System">
+                <p>
+                    A Book Store Database Management System using Python and MySQL database is a system that helps
+                    manage bookstore operations such as keeping track of books, their availability, and sales. The
+                    system can be built using the MySQL Connector module to connect to the MySQL database and fetch
+                    or add data into the database . The system can also have a graphical user interface (GUI) built
+                    using various front-end frameworks . This system can be very efficient and cost-effective,
+                    reducing manual work and saving time for both bookstore staff and customers. <a
+                        href="python-code.html#BKDBMS">Click
+                        For Code</a>
+                </p>
+            </div>
+            <div class="card">
+                <h4 class="label content">Hostel Database Management System</h4>
+                <img src="https://codevdr.github.io/v/img/HSDBMS.webp" alt="Library_DataBase_Management_System">
+                <p>
+                    A Hostel Database Management System using Python and MySQL database is a system that helps
+                    manage hostel operations such as keeping track of rooms, their availability, and expenses
+                    including rooms and food . The system can be built using the MySQL Connector module to connect
+                    to the MySQL database and fetch or add data into the database. The system can also have a
+                    graphical user interface (GUI) built using various front-end frameworks . This system can be
+                    very efficient and cost-effective, reducing manual work and saving time for both hostel staff
+                    and students <a href="python-code.html#HSDBMS">Click For Code</a>
+                </p>
+            </div>
+            <div class="card">
+                <h4 class="label content">ATM Database Management System</h4>
+                <img src="https://codevdr.github.io/v/img/ATM.jpg" alt="Library_DataBase_Management_System">
+                <p>
+                    An ATM Database Management System using Python and MySQL database is a system that helps manage
+                    ATM operations such as keeping track of user accounts, their balance, and transactions. The
+                    system can be built using the MySQL Connector module to connect to the MySQL database and fetch
+                    or add data into the database . The system can also have a graphical user interface (GUI) built
+                    using various front-end frameworks such as Tkinter . This system can be very efficient and
+                    cost-effective, reducing manual work and saving time for both bank staff and customers. <a
+                        href="python-code.html#ATM">Click For Code</a>
+                </p>
+            </div>
+        </div>
+
+
+        <!-- Javascript projects -->
+
+        <h3 class="head" id="projects-javascript">PROJECTS-JAVASCRIPT</h3>
+        <div class="container">
+            <div class="card">
+                <h4 class="label content">Weather Forecast App Using Fetch API</h4>
+                <img src="img/weather-project.jpg" alt="weather-project">
+                <p>
+                    The weather forecast using JavaScript is a sophisticated and dynamic tool that provides real-time
+                    weather updates and predictions. Leveraging the power of JavaScript's interactive capabilities, this
+                    application offers users a seamless experience to access accurate weather information. Through APIs
+                    and data integration, the forecast fetches current weather conditions, temperature, humidity, wind
+                    speed, and more. The user-friendly interface displays intuitive visualizations, such as charts,
+                    maps, and animations, to present the forecast in a comprehensible manner. Whether for travel
+                    planning, outdoor activities, or daily routines, this JavaScript-based weather forecast empowers
+                    users with valuable insights to make informed decisions and stay prepared for any weather condition.
+                    <a href="javascript-code.html">Click For Code</a>
+                </p>
+            </div>
+
+            <div class="card">
+                <h4 class="label content">Pdf Merger Using Javascript</h4>
+                <img src="img/pdf-merger.jpg" alt="pdf-merger">
+                <p>
+                    The PDF merger that allows merging PDFs using JavaScript is a groundbreaking solution for efficient
+                    document management. With its innovative approach, this application empowers users to effortlessly
+                    combine multiple PDF files into a single, unified document. Leveraging the power of JavaScript, the
+                    merger offers a seamless and user-friendly experience, allowing users to upload, arrange, and merge
+                    PDFs with ease. Its robust functionality ensures the preservation of data integrity and formatting,
+                    resulting in a polished and professional output. Whether for personal or professional use, this
+                    JavaScript-based PDF merger simplifies the process of handling PDF documents, saving valuable time
+                    and enhancing productivity for users..<a href="javascript-code.html">Click For Code</a>
+                </p>
+            </div>
+
+            <div class="card">
+                <h4 class="label content">Todo List Using Javascript</h4>
+                <img src="img/todo-list.jpg" alt="todo-list">
+                <p>
+                    The todo-list application built using JavaScript is a powerful and practical organizational tool
+                    that enhances productivity and time management. With its intuitive interface and dynamic
+                    functionality, users can easily create, track, and manage tasks efficiently. Leveraging JavaScript's
+                    flexibility, the todo-list allows for interactive features like task prioritization, due dates,
+                    reminders, and categorization. As tasks are completed, the list updates in real-time, providing a
+                    satisfying sense of accomplishment. Users can also save and retrieve their todo-list data using
+                    local storage or cloud-based solutions. This JavaScript-based todo-list is a valuable companion for
+                    individuals, students, professionals, and anyone seeking to stay organized and focused in their
+                    daily activities.
+                    <a href="javascript-code.html">Click For Code</a>
+                </p>
+            </div>
+
+            <div class="card">
+                <h4 class="label content">Snake Water Gun Game Using Javascript</h4>
+                <img src="img/swg.jpeg" alt="swg-project">
+                <p>
+                    The Snake Water Gun game implemented with computer AI using JavaScript is an exciting twist on the
+                    classic two-player version. In this enhanced rendition, players compete against a clever computer
+                    opponent, challenging their strategic thinking and luck. The game's logic incorporates the three
+                    elements—Snake, Water, and Gun—along with a sophisticated AI algorithm that makes the computer's
+                    moves unpredictable and challenging. With dynamic user interface features and real-time feedback,
+                    players experience an immersive and enjoyable gaming experience. The JavaScript-based Snake Water
+                    Gun game with computer AI offers endless entertainment, making it an ideal choice for solo play or
+                    friendly competitions against the AI opponent.
+                    <a href="javascript-code.html">Click For Code</a>
+                </p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="copy">
+            <img src="https://codevdr.github.io/v/img/me.png" alt="VDR">
+            <p class="copy">copyright &copy; <span id="year"></span>codewithvdr.com</p>
+        </div>
+        <div class="socialMedia">
+            <a href="https://www.facebook.com/vdurgeshwar.hack" class="fa fa-facebook" title="fa-facebook"></a>
+            <a href="#" class="fa fa-twitter" title="fa-twitter"></a>
+            <a href="https://www.youtube.com/channel/UCZfuGvGsUVmqGbTwjvkO68g" class="fa fa-youtube"
+                title="fa-youtube"></a>
+            <a href="https://www.instagram.com/_imvdurgeshwarrao_/" class="fa fa-instagram" title="fa-instagram"></a>
+            <a href="https://github.com/CODEVDR" class="fa fa-github" title="fa-github"></a>
+        </div>
+    </footer>
+</body>
+<script src="js/index.js"></script>
+<script src="js/modeSwitch.js"></script>
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+<script src="js/type.js"></script>
+
+</html>

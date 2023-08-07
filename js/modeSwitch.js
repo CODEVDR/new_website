@@ -25,7 +25,7 @@ const darkMode = () => {
     document.getElementsByClassName('btn-1')[0].style.color = '#4b5563'
     document.getElementsByClassName('btn-1')[0].style.backgroundColor = '#f3f4f6'
   } catch (error) {
-
+    console.log(error)
   }
 
   try {
@@ -36,7 +36,7 @@ const darkMode = () => {
     // For Contact Me Form
     document.getElementById('contact').style.backgroundColor = "#1e293b";
   } catch (error) {
-
+    console.log(error)
   }
   // for footer section
   document.getElementsByTagName("footer")[0].style.backgroundColor = "#1f2937";
@@ -44,6 +44,7 @@ const darkMode = () => {
 
   // writing in localstorage
   localStorage.setItem("darkMode", "true");
+  console.log("Dark : true")
 };
 // Code For Light Mode
 const lightMode = () => {
@@ -70,7 +71,7 @@ const lightMode = () => {
     document.getElementsByClassName('btn-1')[0].style.color = 'white'
     document.getElementsByClassName('btn-1')[0].style.backgroundColor = '#111827'
   } catch (error) {
-
+    console.log(error)
   }
 
   try {
@@ -81,7 +82,7 @@ const lightMode = () => {
     // For Contact Me Form
     document.getElementById('contact').style.backgroundColor = "white";
   } catch (error) {
-
+    console.log(error)
   }
 
   // for footer section
@@ -90,6 +91,7 @@ const lightMode = () => {
 
   // writing in localstorage
   localStorage.setItem("darkMode", "false");
+  console.log("Dark : false")
 };
 // Toggling When Button Is Pressed
 btn.onclick = () => {

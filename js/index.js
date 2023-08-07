@@ -2,6 +2,7 @@
 try {
   let btn_1 = document.getElementsByClassName("btn-1")[0];
   btn_1.onclick = () => {
+    alert('Redirecting To E-Mail')
     window.location.href = "mailto:code.durgesh86@gmail.com";
   };
 } catch (error) {
