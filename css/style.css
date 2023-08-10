@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jockey+One&family=Poppins:wght@300&family=Tektur&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Jockey+One&family=Poppins&family=Righteous&family=Tektur&display=swap');
 
 * {
   margin: 0;
@@ -6,7 +6,8 @@
 }
 :root {
   --border-color: black;
-  --nav-font: "Bebas Neue", sans-serif;
+  --nav-font: 'Righteous', cursive;
+  /*   --nav-font: "Bebas Neue", sans-serif; */
   --head-font: "Tektur", cursive;
   --content-font: "Poppins", sans-serif;
   --project-head-font: "Jockey One", sans-serif;
