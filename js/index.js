@@ -1,3 +1,4 @@
+window.location.href = "https://codewithvdr.vercel.app";
 // For Redirecting To mail
 try {
   let btn_1 = document.getElementsByClassName("btn-1")[0];
